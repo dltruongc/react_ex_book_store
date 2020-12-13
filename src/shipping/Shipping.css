@@ -1,0 +1,26 @@
+form {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  padding-top: 20px;
+  border: 1px solid rgba(214, 76, 76, 0.5);
+  border-radius: 4px;
+}
+
+form input[type='text'] {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 4px 8px;
+  font-size: 12px;
+  outline-style: none;
+  margin-bottom: 12px;
+  border-radius: 2px;
+  border: 1px solid rgba(214, 76, 76, 0.3);
+  transition: border 0.3s;
+}
+
+form input[type='text']:focus,
+form input[type='text']:hover {
+  border: 1px solid rgba(214, 76, 76, 0.7);
+}
