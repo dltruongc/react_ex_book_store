@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { ShippingDetails } from './shipping/Shipping.js';
+import { DeliveryDetails } from './delivery/Delivery.js';
 
 require('./BookStore.css');
 
@@ -27,7 +28,8 @@ class BookStore extends Component {
       case 3:
         return <DeliveryDetails updateFormData={this.updateFormData} />;
       default:
-        return;
+        this.setState({ currentStep: 1 });
+        return <BookList updateFormData={this.updateFormData} />;
     }
   }
 }
@@ -93,12 +95,6 @@ class BookList extends Component {
         </form>
       </div>
     );
-  }
-}
-
-class DeliveryDetails extends Component {
-  render() {
-    return <h1>DeliveryDetails</h1>;
   }
 }
 
