@@ -102,7 +102,7 @@ class BookList extends Component {
           {this.state.books.map((book) => (
             <Item book={book} handleSelectedBooks={this.handleSelectedBooks} />
           ))}
-          <input type='submit' value='Submit' />
+          <input className='btn btn-primary' type='submit' value='Submit' />
         </form>
       </div>
     );

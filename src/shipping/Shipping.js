@@ -90,7 +90,11 @@ export class ShippingDetails extends Component {
             value={this.state.shippingAddress}
             onChange={(event) => this.handleChange(event, 'shippingAddress')}
           />
-          <input type='submit' value='Submit' />
+          <input
+            className='btn btn-success full-width'
+            type='submit'
+            value='Submit'
+          />
         </form>
       </div>
     );

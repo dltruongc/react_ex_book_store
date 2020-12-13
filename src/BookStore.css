@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
 .alert {
   width: 420px;
   margin: auto;
@@ -11,4 +17,48 @@
   color: #ff3333;
   background-color: rgba(255, 63, 63, 0.2);
   border-color: #ff3333;
+}
+
+.btn {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 20px;
+  border: 1px solid;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  border: 1px solid rgba(214, 76, 76, 1);
+  background-color: rgba(214, 76, 76, 0.8);
+  color: white;
+}
+
+.btn-primary:hover {
+  border: 1px solid rgba(214, 76, 76, 1);
+  background-color: rgba(214, 76, 76, 1);
+}
+
+.btn-success {
+  border: 1px solid rgba(42, 175, 75, 1);
+  background-color: rgba(42, 175, 75, 0.8);
+  color: white;
+}
+
+.btn-success:hover {
+  border: 1px solid rgba(42, 175, 75, 1);
+  background-color: rgba(42, 175, 75, 1);
+}
+
+.full-width {
+  width: 100%;
+  margin-left: auto;
+}
+
+.wrap {
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
 }

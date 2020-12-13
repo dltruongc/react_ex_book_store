@@ -45,7 +45,7 @@ export class DeliveryDetails extends Component {
               Normal -- 3-4 days
             </label>
 
-            <button className='btn btn-success'>Submit</button>
+            <button className='btn btn-success full-width'>Submit</button>
           </form>
         </div>
       </div>
