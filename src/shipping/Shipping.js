@@ -72,21 +72,21 @@ export class ShippingDetails extends Component {
           <input
             type='text'
             name='fullName'
-            placeHolder='Enter you full name'
+            placeholder='Enter you full name'
             value={this.state.fullName}
             onChange={(event) => this.handleChange(event, 'fullName')}
           />
           <input
             type='text'
             name='contactNumber'
-            placeHolder='What is your number phone'
+            placeholder='What is your number phone'
             value={this.state.contactNumber}
             onChange={(event) => this.handleChange(event, 'contactNumber')}
           />
           <input
             type='text'
             name='shippingAddress'
-            placeHolder='Enter your address'
+            placeholder='Enter your address'
             value={this.state.shippingAddress}
             onChange={(event) => this.handleChange(event, 'shippingAddress')}
           />
