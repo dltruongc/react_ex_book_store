@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import { ShippingDetails } from './shipping/Shipping.js';
 import { DeliveryDetails } from './delivery/Delivery.js';
+import { Confirmation } from './confirmation/Confirmation.js';
+import { Success } from './success/Success.js';
 
 require('./BookStore.css');
 
@@ -27,6 +29,15 @@ class BookStore extends Component {
         return <ShippingDetails updateFormData={this.updateFormData} />;
       case 3:
         return <DeliveryDetails updateFormData={this.updateFormData} />;
+      case 4:
+        return (
+          <Confirmation
+            updateFormData={this.updateFormData}
+            data={this.state.formValues}
+          />
+        );
+      case 5:
+        return <Success data={this.state.formValues} />;
       default:
         this.setState({ currentStep: 1 });
         return <BookList updateFormData={this.updateFormData} />;
@@ -104,7 +115,7 @@ function Item(props) {
       <label>
         <input
           type='checkbox'
-          value={props.book.id}
+          value={props.book.name}
           onChange={props.handleSelectedBooks}
         />
         {props.book.name} -- {props.book.author}
